@@ -70,6 +70,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5926013B26CF1FF3003706E2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		5926013C26CF1FF3003706E2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5926013D26CF1FF3003706E2 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		5926013E26CF1FF3003706E2 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		5926013F26CF1FF3003706E2 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		5926014026CF1FF3003706E2 /* ViewControllerFactory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllerFactory;
+			sourceTree = "<group>";
+		};
+		5926014126CF1FF3003706E2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		595437BF26CDAB8700331EDF = {
 			isa = PBXGroup;
 			children = (
@@ -93,10 +142,17 @@
 		595437CA26CDAB8700331EDF /* Aven_Test */ = {
 			isa = PBXGroup;
 			children = (
+				595437D926CDAB8900331EDF /* Info.plist */,
 				595437CB26CDAB8700331EDF /* AppDelegate.swift */,
 				595437D426CDAB8900331EDF /* Assets.xcassets */,
+				5926013D26CF1FF3003706E2 /* Endpoints */,
+				5926013E26CF1FF3003706E2 /* Features */,
 				595437D626CDAB8900331EDF /* LaunchScreen.storyboard */,
-				595437D926CDAB8900331EDF /* Info.plist */,
+				5926013C26CF1FF3003706E2 /* Models */,
+				5926013F26CF1FF3003706E2 /* Networking */,
+				5926014126CF1FF3003706E2 /* Services */,
+				5926013B26CF1FF3003706E2 /* Utilities */,
+				5926014026CF1FF3003706E2 /* ViewControllerFactory */,
 			);
 			path = Aven_Test;
 			sourceTree = "<group>";
