@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5926014326CF2038003706E2 /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5926014226CF2038003706E2 /* Organization.swift */; };
+		5926014826CF229D003706E2 /* OrganizationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5926014726CF229D003706E2 /* OrganizationList.swift */; };
 		595437CC26CDAB8700331EDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595437CB26CDAB8700331EDF /* AppDelegate.swift */; };
 		595437D526CDAB8900331EDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 595437D426CDAB8900331EDF /* Assets.xcassets */; };
 		595437D826CDAB8900331EDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 595437D626CDAB8900331EDF /* LaunchScreen.storyboard */; };
@@ -32,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5926014226CF2038003706E2 /* Organization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organization.swift; sourceTree = "<group>"; };
+		5926014726CF229D003706E2 /* OrganizationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationList.swift; sourceTree = "<group>"; };
 		595437C826CDAB8700331EDF /* Aven_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aven_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		595437CB26CDAB8700331EDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		595437D426CDAB8900331EDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 		5926013C26CF1FF3003706E2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5926014226CF2038003706E2 /* Organization.swift */,
+				5926014726CF229D003706E2 /* OrganizationList.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -304,6 +310,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5926014826CF229D003706E2 /* OrganizationList.swift in Sources */,
+				5926014326CF2038003706E2 /* Organization.swift in Sources */,
 				595437CC26CDAB8700331EDF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
