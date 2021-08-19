@@ -17,6 +17,8 @@
 		5926016C26CF2427003706E2 /* ModelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5926016B26CF2427003706E2 /* ModelProvider.swift */; };
 		5926017126CF2446003706E2 /* NetworkRequesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5926017026CF2446003706E2 /* NetworkRequesting.swift */; };
 		5926017626CF245C003706E2 /* NetworkRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5926017526CF245C003706E2 /* NetworkRequester.swift */; };
+		5926017C26CF25BA003706E2 /* OrganizationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5926017B26CF25BA003706E2 /* OrganizationsService.swift */; };
+		5926018126CF25DC003706E2 /* OrganizationsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5926018026CF25DC003706E2 /* OrganizationsAPI.swift */; };
 		595437CC26CDAB8700331EDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595437CB26CDAB8700331EDF /* AppDelegate.swift */; };
 		595437D526CDAB8900331EDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 595437D426CDAB8900331EDF /* Assets.xcassets */; };
 		595437D826CDAB8900331EDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 595437D626CDAB8900331EDF /* LaunchScreen.storyboard */; };
@@ -52,6 +54,8 @@
 		5926016B26CF2427003706E2 /* ModelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelProvider.swift; sourceTree = "<group>"; };
 		5926017026CF2446003706E2 /* NetworkRequesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequesting.swift; sourceTree = "<group>"; };
 		5926017526CF245C003706E2 /* NetworkRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequester.swift; sourceTree = "<group>"; };
+		5926017B26CF25BA003706E2 /* OrganizationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationsService.swift; sourceTree = "<group>"; };
+		5926018026CF25DC003706E2 /* OrganizationsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationsAPI.swift; sourceTree = "<group>"; };
 		595437C826CDAB8700331EDF /* Aven_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aven_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		595437CB26CDAB8700331EDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		595437D426CDAB8900331EDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -142,6 +146,7 @@
 		5926014126CF1FF3003706E2 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				5926017A26CF25A5003706E2 /* Organizations */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -171,6 +176,15 @@
 				5926015926CF23E8003706E2 /* HTTPProviding.swift */,
 			);
 			path = HTTPProviding;
+			sourceTree = "<group>";
+		};
+		5926017A26CF25A5003706E2 /* Organizations */ = {
+			isa = PBXGroup;
+			children = (
+				5926017B26CF25BA003706E2 /* OrganizationsService.swift */,
+				5926018026CF25DC003706E2 /* OrganizationsAPI.swift */,
+			);
+			path = Organizations;
 			sourceTree = "<group>";
 		};
 		595437BF26CDAB8700331EDF = {
@@ -360,6 +374,8 @@
 			files = (
 				5926017626CF245C003706E2 /* NetworkRequester.swift in Sources */,
 				5926016226CF23F8003706E2 /* HTTPProvider.swift in Sources */,
+				5926018126CF25DC003706E2 /* OrganizationsAPI.swift in Sources */,
+				5926017C26CF25BA003706E2 /* OrganizationsService.swift in Sources */,
 				5926017126CF2446003706E2 /* NetworkRequesting.swift in Sources */,
 				5926014D26CF22EC003706E2 /* RestEndpoint.swift in Sources */,
 				5926016726CF240A003706E2 /* ModelProviding.swift in Sources */,

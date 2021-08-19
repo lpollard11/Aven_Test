@@ -10,5 +10,5 @@ import Foundation
 typealias ResponseResult<T> = Result<T, Error>
 
 protocol NetworkRequesting {
-    func request<ModelType: Codable>(for endpoint: RestEndpoint, completion: @escaping (ResponseResult<ModelType>) -> Void)
+    func request<ModelType: Decodable>(for endpoint: RestEndpoint, completion: @escaping (ResponseResult<ModelType>) -> Void)
 }

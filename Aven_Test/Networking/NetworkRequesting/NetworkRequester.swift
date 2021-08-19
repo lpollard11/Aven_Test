@@ -16,6 +16,12 @@ final class NetworkRequester: NetworkRequesting {
     private let modelProviding: ModelProviding
     private let httpProviding: HTTPProviding
     
+    // Inject these dependencies for testing and flexibility.
+    // This is the top of the dependency chain.
+    // The model provider serializes the incoming data from the http provider into model objects.
+    // The http provider takes in a url request and downloads the data and has a completion block that returns data or an error.
+    // The network requester uses all of these dependencies to create a request using an incoming endpoint object.
+    // The public function of the network requester is generic so that the network requester can fetch different types of model objects as long as they adhere to the Decodable protocol.
     init(modelProviding: ModelProviding,
          httpProviding: HTTPProviding) {
         self.modelProviding = modelProviding
