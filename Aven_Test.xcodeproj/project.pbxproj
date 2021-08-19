@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5926014326CF2038003706E2 /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5926014226CF2038003706E2 /* Organization.swift */; };
 		5926014826CF229D003706E2 /* OrganizationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5926014726CF229D003706E2 /* OrganizationList.swift */; };
+		5926014D26CF22EC003706E2 /* RestEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5926014C26CF22EC003706E2 /* RestEndpoint.swift */; };
+		5926015226CF2315003706E2 /* OrganizationsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5926015126CF2315003706E2 /* OrganizationsEndpoint.swift */; };
 		595437CC26CDAB8700331EDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595437CB26CDAB8700331EDF /* AppDelegate.swift */; };
 		595437D526CDAB8900331EDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 595437D426CDAB8900331EDF /* Assets.xcassets */; };
 		595437D826CDAB8900331EDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 595437D626CDAB8900331EDF /* LaunchScreen.storyboard */; };
@@ -36,6 +38,8 @@
 /* Begin PBXFileReference section */
 		5926014226CF2038003706E2 /* Organization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organization.swift; sourceTree = "<group>"; };
 		5926014726CF229D003706E2 /* OrganizationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationList.swift; sourceTree = "<group>"; };
+		5926014C26CF22EC003706E2 /* RestEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestEndpoint.swift; sourceTree = "<group>"; };
+		5926015126CF2315003706E2 /* OrganizationsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationsEndpoint.swift; sourceTree = "<group>"; };
 		595437C826CDAB8700331EDF /* Aven_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aven_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		595437CB26CDAB8700331EDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		595437D426CDAB8900331EDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,6 +97,8 @@
 		5926013D26CF1FF3003706E2 /* Endpoints */ = {
 			isa = PBXGroup;
 			children = (
+				5926015126CF2315003706E2 /* OrganizationsEndpoint.swift */,
+				5926014C26CF22EC003706E2 /* RestEndpoint.swift */,
 			);
 			path = Endpoints;
 			sourceTree = "<group>";
@@ -310,7 +316,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5926014D26CF22EC003706E2 /* RestEndpoint.swift in Sources */,
 				5926014826CF229D003706E2 /* OrganizationList.swift in Sources */,
+				5926015226CF2315003706E2 /* OrganizationsEndpoint.swift in Sources */,
 				5926014326CF2038003706E2 /* Organization.swift in Sources */,
 				595437CC26CDAB8700331EDF /* AppDelegate.swift in Sources */,
 			);
