@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5926014326CF2038003706E2 /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5926014226CF2038003706E2 /* Organization.swift */; };
-		5926014826CF229D003706E2 /* OrganizationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5926014726CF229D003706E2 /* OrganizationList.swift */; };
 		5926014D26CF22EC003706E2 /* RestEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5926014C26CF22EC003706E2 /* RestEndpoint.swift */; };
 		5926015226CF2315003706E2 /* OrganizationsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5926015126CF2315003706E2 /* OrganizationsEndpoint.swift */; };
 		5926015A26CF23E8003706E2 /* HTTPProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5926015926CF23E8003706E2 /* HTTPProviding.swift */; };
@@ -51,7 +50,6 @@
 
 /* Begin PBXFileReference section */
 		5926014226CF2038003706E2 /* Organization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organization.swift; sourceTree = "<group>"; };
-		5926014726CF229D003706E2 /* OrganizationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationList.swift; sourceTree = "<group>"; };
 		5926014C26CF22EC003706E2 /* RestEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestEndpoint.swift; sourceTree = "<group>"; };
 		5926015126CF2315003706E2 /* OrganizationsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationsEndpoint.swift; sourceTree = "<group>"; };
 		5926015926CF23E8003706E2 /* HTTPProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPProviding.swift; sourceTree = "<group>"; };
@@ -118,7 +116,6 @@
 			isa = PBXGroup;
 			children = (
 				5926014226CF2038003706E2 /* Organization.swift */,
-				5926014726CF229D003706E2 /* OrganizationList.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -416,7 +413,6 @@
 				5926017126CF2446003706E2 /* NetworkRequesting.swift in Sources */,
 				5926014D26CF22EC003706E2 /* RestEndpoint.swift in Sources */,
 				5926016726CF240A003706E2 /* ModelProviding.swift in Sources */,
-				5926014826CF229D003706E2 /* OrganizationList.swift in Sources */,
 				5926015226CF2315003706E2 /* OrganizationsEndpoint.swift in Sources */,
 				592601B926CF3857003706E2 /* OrganizationsViewController.swift in Sources */,
 				5926016C26CF2427003706E2 /* ModelProvider.swift in Sources */,

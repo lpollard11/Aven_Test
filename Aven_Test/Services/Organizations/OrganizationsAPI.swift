@@ -16,7 +16,7 @@ final class OrganizationsServiceAPI: OrganizationsService {
     }
     
     // Call the network requester with an organizations endpoint object and pass in a completion block with a specific Decodable type (OrganizationList).
-    func organizations(completion: @escaping (ResponseResult<OrganizationList>) -> Void) {
+    func organizations(completion: @escaping (ResponseResult<[Organization]>) -> Void) {
         networkRequester.request(for: OrganizationsEndpoint(), completion: completion)
     }
 }

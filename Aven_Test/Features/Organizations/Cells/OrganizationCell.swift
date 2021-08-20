@@ -17,7 +17,7 @@ final class OrganizationCell: UITableViewCell {
     
     private let avatarImageView = UIImageView()
     private let nameLabel = UILabel()
-    private let urlLabel = UILabel()
+    private let urlButton = UIButton()
     private let descriptionLabel = UILabel()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -26,10 +26,17 @@ final class OrganizationCell: UITableViewCell {
     }
     
     func configure(with viewModel: OrganizationCellViewModel) {
-        viewModel.refreshImage = { [weak self] image in self?.avatarImageView.image = image }
+        viewModel.refreshImage = { [weak self] image in
+            DispatchQueue.main.async {
+                self?.avatarImageView.image = image
+            }
+        }
         
+        viewModel.loadImage()
         nameLabel.text = viewModel.name
-        urlLabel.text = viewModel.url
+        
+        urlButton.setTitle(viewModel.url, for: .normal)
+        urlButton.addTarget(viewModel, action: #selector(viewModel.urlTapped), for: .touchUpInside)
         
         // Hide or show the description label depending on if the value exists.
         if let description = viewModel.description {
@@ -45,6 +52,15 @@ final class OrganizationCell: UITableViewCell {
     }
     
     private func setupUI() {
+        nameLabel.font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.largeTitle)
+        
+        urlButton.setTitleColor(.blue, for: .normal)
+        urlButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.body)
+        urlButton.titleLabel?.numberOfLines = 0
+        
+        descriptionLabel.font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.body)
+        descriptionLabel.numberOfLines = 0
+        
         avatarImageView.contentMode = .scaleAspectFit
         
         contentView.addSubview(avatarImageView)
@@ -56,7 +72,7 @@ final class OrganizationCell: UITableViewCell {
         ]}
         
         // Use stack view to layout the labels of the cell so that the description label can be shown or hidden depending on if the value exists.
-        let arrangedSubviews: [UIView] = [nameLabel, urlLabel, descriptionLabel]
+        let arrangedSubviews: [UIView] = [nameLabel, urlButton, descriptionLabel]
         let stackView = UIStackView(arrangedSubviews: arrangedSubviews)
         stackView.axis = .vertical
         
@@ -67,31 +83,5 @@ final class OrganizationCell: UITableViewCell {
             $0.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -Constants.standardSpacing),
             $0.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -Constants.standardSpacing)
         ]}
-        
-        nameLabel.font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.largeTitle)
-        
-//        contentView.addSubview(nameLabel)
-//        nameLabel.addConstraints {[
-//            $0.topAnchor.constraint(equalTo: contentView.topAnchor, constant: Constants.tightSpacing),
-//            $0.leadingAnchor.constraint(equalTo: avatarImageView.trailingAnchor, constant: Constants.tighterSpacing)
-//        ]}
-        
-        urlLabel.font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.body)
-        
-//        contentView.addSubview(urlLabel)
-//        urlLabel.addConstraints {[
-//            $0.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: Constants.tighterSpacing),
-//            $0.leadingAnchor.constraint(equalTo: avatarImageView.trailingAnchor, constant: Constants.tighterSpacing)
-//        ]}
-        
-        descriptionLabel.font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.body)
-        descriptionLabel.numberOfLines = 0
-        
-//        contentView.addSubview(descriptionLabel)
-//        descriptionLabel.addConstraints {[
-//            $0.topAnchor.constraint(equalTo: urlLabel.bottomAnchor, constant: Constants.tighterSpacing),
-//            $0.leadingAnchor.constraint(equalTo: avatarImageView.trailingAnchor, constant: Constants.tighterSpacing),
-//            $0.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: Constants.tightSpacing),
-//        ]}
     }
 }

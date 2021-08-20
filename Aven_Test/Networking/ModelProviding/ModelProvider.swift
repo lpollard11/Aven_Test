@@ -12,7 +12,8 @@ final class ModelProvider: ModelProviding {
         do {
             let result = try JSONDecoder().decode(ModelType.self, from: data)
             return result
-        } catch {
+        } catch(let error) {
+            print(error)
             return nil
         }
     }

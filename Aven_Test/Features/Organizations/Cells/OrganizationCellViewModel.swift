@@ -29,9 +29,18 @@ final class OrganizationCellViewModel {
     }
     
     private let organization: Organization
+    private let openURL: (URL) -> Void
     
-    init(organization: Organization) {
+    init(organization: Organization, openURL: @escaping (URL) -> Void) {
         self.organization = organization
+        self.openURL = openURL
+    }
+    
+    @objc func urlTapped() {
+        guard let url = URL(string: url) else {
+            return
+        }
+        openURL(url)
     }
     
     func loadImage() {

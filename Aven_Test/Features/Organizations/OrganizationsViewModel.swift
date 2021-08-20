@@ -5,7 +5,7 @@
 //  Created by Lee Pollard on 8/19/21.
 //
 
-import Foundation
+import UIKit
 
 // The OrganizationsViewModel is repsonsible for converting raw JSON objects into consumable view model objects, holding onto the generated organization cell view models, and returning necessary info on that data source.
 final class OrganizationsViewModel {
@@ -26,8 +26,8 @@ final class OrganizationsViewModel {
     func loadData() {
         service.organizations { [weak self] result in
             switch result {
-            case .success(let list):
-                self?.organizatons = list.organizations.map { OrganizationCellViewModel(organization: $0) }
+            case .success(let data):
+                self?.dataReceived(data: data)
                 self?.reloadData?()
             case .failure(let error):
                 self?.showError?(error)
@@ -37,5 +37,13 @@ final class OrganizationsViewModel {
     
     func cellViewModel(for indexPath: IndexPath) -> OrganizationCellViewModel {
         return organizatons[indexPath.row]
+    }
+    
+    private func dataReceived(data: [Organization]) {
+        organizatons = data.map { OrganizationCellViewModel(organization: $0, openURL: openURL) }
+    }
+    
+    private func openURL(url: URL) {
+        UIApplication.shared.open(url)
     }
 }

@@ -71,97 +71,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E3DB6DB8-E46A-4BCD-811E-2F7D50109F8A"
+            uuid = "93BC60F8-B5FE-48BB-8ED2-15D00C539579"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Aven_Test/Networking/NetworkRequesting/NetworkRequester.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "request(for:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "143CF78A-B7EF-435F-A86D-AC9566DACE9A"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Aven_Test/Networking/NetworkRequesting/NetworkRequester.swift"
+            filePath = "Aven_Test/Features/Organizations/Cells/OrganizationCellViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "40"
             endingLineNumber = "40"
-            landmarkName = "request(for:completion:)"
+            landmarkName = "urlTapped()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B2194ADF-8A13-4C1E-A8E9-E35CAD724D8B"
+            uuid = "C210A0F4-94C0-4F8A-84DF-EEEF418A1DCF"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Aven_Test/Networking/NetworkRequesting/NetworkRequester.swift"
+            filePath = "Aven_Test/Features/Organizations/Cells/OrganizationCellViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "request(for:completion:)"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "urlTapped()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "ECF035AD-FBB7-4B29-A2EE-5234B82F2C60"
+            uuid = "5C81900A-ABC4-4C86-B3E7-E134F0D9FFA5"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Aven_Test/Networking/NetworkRequesting/NetworkRequester.swift"
+            filePath = "Aven_Test/Features/Organizations/Cells/OrganizationCellViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "request(for:completion:)"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "urlTapped()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "ECF035AD-FBB7-4B29-A2EE-5234B82F2C60 - 50c520240b4910be"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Aven_Test.NetworkRequester.request&lt;A where A: Swift.Decodable&gt;(for: Aven_Test.RestEndpoint, completion: (Swift.Result&lt;A, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Aven_Test"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/leepollard/Documents/Repos/Aven_Test/Aven_Test/Networking/NetworkRequesting/NetworkRequester.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "38"
-                  endingLineNumber = "38"
-                  offsetFromSymbolStart = "204">
-               </Location>
-               <Location
-                  uuid = "ECF035AD-FBB7-4B29-A2EE-5234B82F2C60 - dfeb32c999083c9f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Aven_Test.NetworkRequester.request&lt;A where A: Swift.Decodable&gt;(for: Aven_Test.RestEndpoint, completion: (Swift.Result&lt;A, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Aven_Test"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/leepollard/Documents/Repos/Aven_Test/Aven_Test/Networking/NetworkRequesting/NetworkRequester.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "38"
-                  endingLineNumber = "38"
-                  offsetFromSymbolStart = "387">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

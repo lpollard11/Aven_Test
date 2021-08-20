@@ -8,5 +8,5 @@
 import Foundation
 
 protocol OrganizationsService {
-    func organizations(completion: @escaping (ResponseResult<OrganizationList>) -> Void)
+    func organizations(completion: @escaping (ResponseResult<[Organization]>) -> Void)
 }
