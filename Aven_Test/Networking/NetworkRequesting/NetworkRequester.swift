@@ -13,6 +13,10 @@ enum ResponseError: Error {
 }
 
 final class NetworkRequester: NetworkRequesting {
+    private enum Constants {
+        static let baseURL = "https://api.github.com"
+    }
+    
     private let modelProviding: ModelProviding
     private let httpProviding: HTTPProviding
     
@@ -47,7 +51,10 @@ final class NetworkRequester: NetworkRequesting {
     }
     
     private func urlRequest(for endpoint: RestEndpoint) -> URLRequest {
-        var request = URLRequest(url: URL(string: endpoint.path)!)
+        var url = URL(string: Constants.baseURL)!
+        url.appendPathComponent(endpoint.path)
+        
+        var request = URLRequest(url: url)
         request.httpMethod = endpoint.method.rawValue
         return request
     }

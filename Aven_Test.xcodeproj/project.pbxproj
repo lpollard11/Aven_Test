@@ -19,6 +19,12 @@
 		5926017626CF245C003706E2 /* NetworkRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5926017526CF245C003706E2 /* NetworkRequester.swift */; };
 		5926017C26CF25BA003706E2 /* OrganizationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5926017B26CF25BA003706E2 /* OrganizationsService.swift */; };
 		5926018126CF25DC003706E2 /* OrganizationsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5926018026CF25DC003706E2 /* OrganizationsAPI.swift */; };
+		5926018626CF2716003706E2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5926018526CF2716003706E2 /* Extensions.swift */; };
+		5926018D26CF2A90003706E2 /* OrganizationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5926018C26CF2A90003706E2 /* OrganizationCell.swift */; };
+		5926019526CF2ACE003706E2 /* OrganizationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5926019426CF2ACE003706E2 /* OrganizationCellViewModel.swift */; };
+		592601B426CF3750003706E2 /* OrganizationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592601B326CF3750003706E2 /* OrganizationsViewModel.swift */; };
+		592601B926CF3857003706E2 /* OrganizationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592601B826CF3857003706E2 /* OrganizationsViewController.swift */; };
+		592601C426CF39A6003706E2 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592601C326CF39A6003706E2 /* ViewControllerFactory.swift */; };
 		595437CC26CDAB8700331EDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595437CB26CDAB8700331EDF /* AppDelegate.swift */; };
 		595437D526CDAB8900331EDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 595437D426CDAB8900331EDF /* Assets.xcassets */; };
 		595437D826CDAB8900331EDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 595437D626CDAB8900331EDF /* LaunchScreen.storyboard */; };
@@ -56,6 +62,12 @@
 		5926017526CF245C003706E2 /* NetworkRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequester.swift; sourceTree = "<group>"; };
 		5926017B26CF25BA003706E2 /* OrganizationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationsService.swift; sourceTree = "<group>"; };
 		5926018026CF25DC003706E2 /* OrganizationsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationsAPI.swift; sourceTree = "<group>"; };
+		5926018526CF2716003706E2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		5926018C26CF2A90003706E2 /* OrganizationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationCell.swift; sourceTree = "<group>"; };
+		5926019426CF2ACE003706E2 /* OrganizationCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationCellViewModel.swift; sourceTree = "<group>"; };
+		592601B326CF3750003706E2 /* OrganizationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationsViewModel.swift; sourceTree = "<group>"; };
+		592601B826CF3857003706E2 /* OrganizationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationsViewController.swift; sourceTree = "<group>"; };
+		592601C326CF39A6003706E2 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
 		595437C826CDAB8700331EDF /* Aven_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aven_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		595437CB26CDAB8700331EDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		595437D426CDAB8900331EDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -97,6 +109,7 @@
 		5926013B26CF1FF3003706E2 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				5926018526CF2716003706E2 /* Extensions.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -122,6 +135,7 @@
 		5926013E26CF1FF3003706E2 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				5926018A26CF277F003706E2 /* Organizations */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -139,6 +153,7 @@
 		5926014026CF1FF3003706E2 /* ViewControllerFactory */ = {
 			isa = PBXGroup;
 			children = (
+				592601C326CF39A6003706E2 /* ViewControllerFactory.swift */,
 			);
 			path = ViewControllerFactory;
 			sourceTree = "<group>";
@@ -185,6 +200,25 @@
 				5926018026CF25DC003706E2 /* OrganizationsAPI.swift */,
 			);
 			path = Organizations;
+			sourceTree = "<group>";
+		};
+		5926018A26CF277F003706E2 /* Organizations */ = {
+			isa = PBXGroup;
+			children = (
+				592601B826CF3857003706E2 /* OrganizationsViewController.swift */,
+				592601B326CF3750003706E2 /* OrganizationsViewModel.swift */,
+				5926018B26CF2A84003706E2 /* Cells */,
+			);
+			path = Organizations;
+			sourceTree = "<group>";
+		};
+		5926018B26CF2A84003706E2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5926018C26CF2A90003706E2 /* OrganizationCell.swift */,
+				5926019426CF2ACE003706E2 /* OrganizationCellViewModel.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		595437BF26CDAB8700331EDF = {
@@ -372,19 +406,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5926018D26CF2A90003706E2 /* OrganizationCell.swift in Sources */,
+				592601B426CF3750003706E2 /* OrganizationsViewModel.swift in Sources */,
 				5926017626CF245C003706E2 /* NetworkRequester.swift in Sources */,
 				5926016226CF23F8003706E2 /* HTTPProvider.swift in Sources */,
 				5926018126CF25DC003706E2 /* OrganizationsAPI.swift in Sources */,
 				5926017C26CF25BA003706E2 /* OrganizationsService.swift in Sources */,
+				592601C426CF39A6003706E2 /* ViewControllerFactory.swift in Sources */,
 				5926017126CF2446003706E2 /* NetworkRequesting.swift in Sources */,
 				5926014D26CF22EC003706E2 /* RestEndpoint.swift in Sources */,
 				5926016726CF240A003706E2 /* ModelProviding.swift in Sources */,
 				5926014826CF229D003706E2 /* OrganizationList.swift in Sources */,
 				5926015226CF2315003706E2 /* OrganizationsEndpoint.swift in Sources */,
+				592601B926CF3857003706E2 /* OrganizationsViewController.swift in Sources */,
 				5926016C26CF2427003706E2 /* ModelProvider.swift in Sources */,
+				5926019526CF2ACE003706E2 /* OrganizationCellViewModel.swift in Sources */,
 				5926014326CF2038003706E2 /* Organization.swift in Sources */,
 				5926015A26CF23E8003706E2 /* HTTPProviding.swift in Sources */,
 				595437CC26CDAB8700331EDF /* AppDelegate.swift in Sources */,
+				5926018626CF2716003706E2 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
